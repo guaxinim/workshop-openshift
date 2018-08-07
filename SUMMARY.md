@@ -7,7 +7,7 @@
   * [Lab 1.2 - Docker parte 2](parte-1-linux-containers/lab-1.2-operar.md)
   * [Lab 1.3 - Docker parte 3](parte-1-linux-containers/lab-1.3-compartilhar.md)
 * [Parte 2 - OpenShift](parte-2-openshift-para-devs/README.md)
-  * [Lab 2.0 - Preparar](parte-2-openshift-para-devs/lab-2.0-preparar.md)
+  * [Lab 2.0 - Prepararação](parte-2-openshift-para-devs/lab-2.0-preparar.md)
   * [Lab 2.1 - Show me the Code](parte-2-openshift-para-devs/lab-2.1-show-me-the-code/README.md)
     * [2.1.1 - Acesso ao ambiente](parte-2-openshift-para-devs/lab-2.1-show-me-the-code/2.1.1-acesso-ao-ambiente.md)
     * [2.1.2 - Deploy imagem do Docker Hub](parte-2-openshift-para-devs/lab-2.1-show-me-the-code/2.1.2-deploy-imagem-do-docker-hub.md)
