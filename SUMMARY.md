@@ -27,4 +27,4 @@
   * [2.18 - ConfigMap e Secrets](parte-2-openshift-para-devs/lab-2.1-show-me-the-code/2.1.18-configmap-e-secrets.md)
 * [Parte 3 - Diferentes estratégias de deployment](parte-2-openshift-para-devs/lab-2.2-diferentes-estrategias-de-deployment-todo/README.md)
   * [3.1 Canary Release](parte-2-openshift-para-devs/lab-2.2-diferentes-estrategias-de-deployment-todo/2.2.1-canary-release.md)
-  * [3.2 Blue/Green deployment](parte-2-openshift-para-devs/lab-2.2-diferentes-estrategias-de-deployment-todo/2.2.2-blue-green-deployment.md)
+  * [3.2 Blue/Green deploy](parte-2-openshift-para-devs/lab-2.2-diferentes-estrategias-de-deployment-todo/2.2.2-blue-green-deployment.md)
