@@ -1,4 +1,4 @@
-# Lab 2.0 - Preparar
+# Lab 2.0 - Preparação  
 
 ## Lab 2.0 - Objetivos
 
