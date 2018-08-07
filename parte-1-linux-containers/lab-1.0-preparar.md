@@ -1,4 +1,5 @@
-# Lab 1.0 - Preparar
+# Lab 1.0 - Setup do ambiente  
+
 ## Lab 1.0 - Objetivos
 Preparar o ambiente local para os próximos exercícios.
 
