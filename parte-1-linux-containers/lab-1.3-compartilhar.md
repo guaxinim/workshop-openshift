@@ -25,9 +25,7 @@ Para essa atividades, vamos criar os seguintes diretórios:
 mkdir -p ~/workshop-openshift/lab1.3/src && cd ~/workshop-openshift/lab1.3/src
 ```
 
-No subdiretório `~/workshop-openshift/lab1.3/src`, vamos adicionar dois arquivos, `app.py` e `requirements.txt`, com os seguintes conteúdos \(respectivamente\):    
-
-Para agilizar a criação dos arquivos, basta executar os comandos abaixo:
+No subdiretório `~/workshop-openshift/lab1.3/src`, vamos adicionar dois arquivos, `app.py` e `requirements.txt` através dos comandos abaixo:
 
 ```python
 cat <<EOF > ~/workshop-openshift/lab1.3/src/app.py
