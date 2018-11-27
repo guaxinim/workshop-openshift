@@ -57,8 +57,7 @@ Werkzeug==0.12.2
 EOF
 ```
 
-Na raiz do diretório `~/workshop-openshift/lab1.3/`, vamos adicionar um arquivo de texto com nome `Dockerfile` com o seguinte conteúdo:    
-Para agilizar a criação do arquivos, podemos utilizar:
+Na raiz do diretório `~/workshop-openshift/lab1.3/`, vamos adicionar um arquivo de texto com nome `Dockerfile` através do seguinte comando:
 
 ```text
 cat <<EOF > ~/workshop-openshift/lab1.3/Dockerfile
