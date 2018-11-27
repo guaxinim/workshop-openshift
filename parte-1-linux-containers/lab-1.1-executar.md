@@ -150,13 +150,13 @@ docker run -it centos:7 /bin/bash
 No exemplo anterior você deve ter percebido que além de iniciar o container você entrou no isolamento. Para sair usa-se a sequência _CTRL+P+Q_. Para iniciar o container de forma _detached_, usa-se:
 
 ```text
-# docker run -itd centos:7 /bin/bash
+docker run -itd centos:7 /bin/bash
 ```
 
 Caso queira entrar em um container já em execução, para fazer _attach_ no processo já em execução, usa-se:
 
 ```text
-# docker attach <nome/ID>
+docker attach <nome/ID>
 ```
 
 ![](../.gitbook/assets/selection_218.png)

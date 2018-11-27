@@ -25,32 +25,7 @@ Para essa atividades, vamos criar os seguintes diretórios:
 mkdir -p ~/workshop-openshift/lab1.3/src && cd ~/workshop-openshift/lab1.3/src
 ```
 
-No subdiretório `~/workshop-openshift/lab1.3/src`, vamos adicionar dois arquivos, `app.py` e `requirements.txt`, com os seguintes conteúdos \(respectivamente\):
-
-```python
-#! /usr/bin/env python
-
-from flask import Flask
-
-app = Flask(__name__)
-
-@app.route('/')
-def hello_world():
-    return "Hello, world!"
-
-if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=8080)
-```
-
-e
-
-```text
-click==6.7
-Flask==0.12.2
-itsdangerous==0.24
-Jinja2==2.9.6
-MarkupSafe==1.0
-```
+No subdiretório `~/workshop-openshift/lab1.3/src`, vamos adicionar dois arquivos, `app.py` e `requirements.txt`, com os seguintes conteúdos \(respectivamente\):    
 
 Para agilizar a criação dos arquivos, basta executar os comandos abaixo:
 
@@ -84,27 +59,7 @@ Werkzeug==0.12.2
 EOF
 ```
 
-Na raiz do diretório `~/workshop-openshift/lab1.3/`, vamos adicionar um arquivo de texto com nome `Dockerfile` com o seguinte conteúdo:
-
-```text
-FROM fedora:27
-
-LABEL maintainer="dvercill@redhat.com"
-LABEL version="1.0"
-
-RUN mkdir /var/www
-
-ADD src/. /var/www
-
-RUN pip3 install -r /var/www/requirements.txt
-
-EXPOSE 8080
-
-USER 12345
-
-CMD ["python3", "/var/www/app.py"]
-```
-
+Na raiz do diretório `~/workshop-openshift/lab1.3/`, vamos adicionar um arquivo de texto com nome `Dockerfile` com o seguinte conteúdo:    
 Para agilizar a criação do arquivos, podemos utilizar:
 
 ```text
@@ -131,8 +86,8 @@ EOF
 Para iniciarmos o processo de construção da nova imagem, usa-se:
 
 ```text
-# cd ~/workshop-openshift/lab1.3
-# docker build -t workshop-openshift .
+cd ~/workshop-openshift/lab1.3
+docker build -t workshop-openshift .
 ```
 
 ![](../.gitbook/assets/selection_222%20%281%29.png)
@@ -150,7 +105,7 @@ A saída desse comando é algo como:
 Verifique a sua imagem nova no registro local:
 
 ```text
-# docker images | grep workshop-openshift
+docker images | grep workshop-openshift
 ```
 
 ![](../.gitbook/assets/selection_223%20%281%29.png)
@@ -164,18 +119,18 @@ Para publicar uma imagem em um registro remoto, muitas das vezes é necessário 
 > _note_: caso não possua uma conta no Docker Hub, acesse [https://hub.docker.com/register](https://hub.docker.com/register) e crie um conta pessoal.
 
 ```text
-# docker login docker.io
+docker login docker.io
 ```
 
 Depois de autenticados, precisamos colocar um tag na nossa imagem usando a convenção `registry/username/image:tag`:
 
 ```text
-# docker tag workshop-openshift docker.io/<username>/workshop-openshift
+docker tag workshop-openshift docker.io/<username>/workshop-openshift
 ```
 
 E depois já podemos enviar nossa imagem:
 
 ```text
-# docker push docker.io/<username>/workshop-openshift
+docker push docker.io/<username>/workshop-openshift
 ```
 
