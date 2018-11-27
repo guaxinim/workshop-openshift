@@ -166,10 +166,11 @@ docker attach <nome/ID>
 Uma das vantagens do uso de containers é a possibilidade de abstração da complexidade de implantação de um determinado serviço. Vamos rodar agora uma imagem do wordpress e ver o trabalho necessário para colocar esse CMS no ar.
 
 ```text
-docker run --rm -p 80:8080 wordpress
+docker run --rm -p 80:80 wordpress
 ```
 
-O parametro -p exporta a porta interna do container \(80\) para a nossa máquina na porta 8080. Esse parâmetro será explicado melhor nos próximos exercícios.
+O parametro -p exporta a porta interna do container \(80\) para a nossa máquina na porta 8080.    
+O padrão para o parâmetro -p é  **hostPort**:**containerPort**
 
 ![](../.gitbook/assets/wordpress.gif)
 
