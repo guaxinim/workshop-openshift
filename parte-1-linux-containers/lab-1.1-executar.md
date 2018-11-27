@@ -174,9 +174,9 @@ O padrão para o parâmetro -p é  **hostPort : containerPort**
 
 ![](../.gitbook/assets/wordpress.gif)
 
-Agora podemos abrir nosso browser na página: 
+Agora podemos abrir nosso browser no browser **(substitua localhost por seu IP Público)**: 
 
-[http://localhost:8080](http://<ip da sua VM>:8080)
+[http://localhost:8080](http://localhost:8080)
 
 > _nota_: caso esteja usando uma VM local acesse a URL utilizando o endereço IP da sua VM. Execute o comando `ip a s` dentro do shel da VM para saber o IP da rede interna do VirtualBox.
 >
