@@ -46,6 +46,7 @@ Os **registros remotos são servidores, públicos ou privados, responsáveis por
 
 * [**https://hub.docker.com**](https://hub.docker.com)
 * [**https://registry.access.redhat.com**](https://registry.access.redhat.com)
+* [**https://quay.io**](https://quay.io)
 * [**https://registry.fedoraproject.org**](https://registry.fedoraproject.org)
 
 Geralmente os registros remotos são executados na **porta 5000.**
