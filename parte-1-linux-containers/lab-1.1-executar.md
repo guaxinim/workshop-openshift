@@ -169,8 +169,8 @@ Uma das vantagens do uso de containers é a possibilidade de abstração da comp
 docker run --rm -p 80:80 wordpress
 ```
 
-O parametro -p exporta a porta interna do container \(80\) para a nossa máquina na porta 8080.    
-O padrão para o parâmetro -p é  **hostPort**:**containerPort**
+O parametro -p exporta a porta interna do container \(80\) para a nossa máquina na porta 80.    
+O padrão para o parâmetro -p é  **hostPort : containerPort**
 
 ![](../.gitbook/assets/wordpress.gif)
 
