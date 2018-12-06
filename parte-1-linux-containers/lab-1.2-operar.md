@@ -7,18 +7,12 @@
 * Mapear volumes locais aos containers
 * Mapear rede aos containers
 
-Para as tarefas seguintes execute o comando abaixo:
+Para as tarefas seguintes execute os comando abaixo:
 
 ```text
 docker run -d busybox /bin/sh -c "while true; do echo Hello from Linux container [\$HOSTNAME];sleep 1;done"
 docker run -d busybox /bin/sh -c "while true; do echo Hello from Linux container [\$HOSTNAME];sleep 2;done"
 docker run -d busybox /bin/sh -c "while true; do echo Hello from Linux container [\$HOSTNAME];sleep 3;done"
-```
-
-Ou se preferir, execute tudo em um único comando:
-
-```text
-for i in `seq 3`; do docker run -d busybox /bin/sh -c "while true; do echo Hello from Linux container [\$HOSTNAME];sleep $i;done"; done
 ```
 
 ## Tarefas
@@ -109,7 +103,7 @@ para se certificar disso use o comando abaixo:
 docker port <id do conatiner httpd>
 ```
 
-execute o teste abaixo tentando acessr a porta `8080` a partir do host \(fora do container\):
+execute o teste abaixo tentando acessar a porta `8080` a partir do host \(fora do container\):
 
 ```text
 curl http://localhost:8080
